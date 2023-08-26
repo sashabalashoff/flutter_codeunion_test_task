@@ -1,0 +1,16 @@
+sign_in:
+  title: Авторизация
+  login_or_email: Логин или почта
+  password: Пароль
+  sign_in_button: Войти
+  sign_up_button: Зарегистрироваться
+
+profile:
+  title: Профиль
+  sign_out_button: Выйти
+
+nav_bar:
+  feed: Лента
+  map: Карта
+  favorites: Избранное
+  profile: Профиль

@@ -1,0 +1,16 @@
+sign_in:
+  title: Authorization
+  login_or_email: Login or Email
+  password: Password
+  sign_in_button: Sign In
+  sign_up_button: Sign Up
+
+profile:
+  title: Profile
+  sign_out_button: Sign out
+
+nav_bar:
+  feed: Feed
+  map: Map
+  favorites: Favorites
+  profile: Profile
