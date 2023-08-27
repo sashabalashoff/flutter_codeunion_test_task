@@ -14,3 +14,6 @@ nav_bar:
   map: Map
   favorites: Favorites
   profile: Profile
+
+login_bloc:
+  unknown_error: Authorization error

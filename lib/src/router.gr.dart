@@ -15,6 +15,12 @@ abstract class _$AppRouter extends RootStackRouter {
 
   @override
   final Map<String, PageFactory> pagesMap = {
+    ProfileScreenRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const ProfileScreen(),
+      );
+    },
     SignInScreenRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -27,13 +33,45 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const SplashScreen(),
       );
     },
-    ProfileScreenRoute.name: (routeData) {
+    HomeScreenRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const ProfileScreen(),
+        child: const HomeScreen(),
+      );
+    },
+    FavoritesScreenRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const FavoritesScreen(),
+      );
+    },
+    MapScreenRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const MapScreen(),
+      );
+    },
+    FeedScreenRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const FeedScreen(),
       );
     },
   };
+}
+
+/// generated route for
+/// [ProfileScreen]
+class ProfileScreenRoute extends PageRouteInfo<void> {
+  const ProfileScreenRoute({List<PageRouteInfo>? children})
+      : super(
+          ProfileScreenRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ProfileScreenRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
 }
 
 /// generated route for
@@ -65,15 +103,57 @@ class SplashScreenRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [ProfileScreen]
-class ProfileScreenRoute extends PageRouteInfo<void> {
-  const ProfileScreenRoute({List<PageRouteInfo>? children})
+/// [HomeScreen]
+class HomeScreenRoute extends PageRouteInfo<void> {
+  const HomeScreenRoute({List<PageRouteInfo>? children})
       : super(
-          ProfileScreenRoute.name,
+          HomeScreenRoute.name,
           initialChildren: children,
         );
 
-  static const String name = 'ProfileScreenRoute';
+  static const String name = 'HomeScreenRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [FavoritesScreen]
+class FavoritesScreenRoute extends PageRouteInfo<void> {
+  const FavoritesScreenRoute({List<PageRouteInfo>? children})
+      : super(
+          FavoritesScreenRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'FavoritesScreenRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [MapScreen]
+class MapScreenRoute extends PageRouteInfo<void> {
+  const MapScreenRoute({List<PageRouteInfo>? children})
+      : super(
+          MapScreenRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'MapScreenRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [FeedScreen]
+class FeedScreenRoute extends PageRouteInfo<void> {
+  const FeedScreenRoute({List<PageRouteInfo>? children})
+      : super(
+          FeedScreenRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'FeedScreenRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

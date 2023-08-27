@@ -6,6 +6,7 @@ class CustomInput extends StatelessWidget {
   final String? hintText;
   final TextInputType? keyboardType;
   final TextInputAction? textInputAction;
+  final bool obscureText;
 
   const CustomInput({
     Key? key,
@@ -14,6 +15,7 @@ class CustomInput extends StatelessWidget {
     this.hintText,
     this.keyboardType,
     this.textInputAction,
+    this.obscureText = false,
   }) : super(key: key);
 
   @override
@@ -28,6 +30,7 @@ class CustomInput extends StatelessWidget {
       onChanged: onChanged,
       keyboardType: keyboardType,
       textInputAction: textInputAction,
+      obscureText: obscureText,
       decoration: InputDecoration(
         border: InputBorder.none,
         fillColor: colorScheme.surface,
